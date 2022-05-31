@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Unity, { UnityContext } from "react-unity-webgl";
 import React, { useState, useEffect } from "react";
+import FullWidthTabs from "./FixedTabs"
 
 const unityContext = new UnityContext({
   loaderUrl: "Build/Build.loader.js",
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
+      <FullWidthTabs/>
       <button onClick={TestA}> 리액트 버튼 </button>
       <br />
       <br />
